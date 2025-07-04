@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fútbol Total - Página Principal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #006400, #228B22);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav button {
+      margin: 8px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ffffff;
+      color: #006400;
+      border: 2px solid #006400;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #006400;
+      color: white;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+      background: url('https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg') no-repeat center;
+      background-size: cover;
+      min-height: 500px;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    iframe {
+      margin-top: 30px;
+      border: 3px solid #006400;
+      border-radius: 10px;
+    }
+
+    #iframe-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚽ Fútbol Total</h1>
+    <nav>
+      <button onclick="window.open('https://www.fifa.com', '_blank')">FIFA</button>
+      <button onclick="window.open('https://www.espn.com/futbol/', '_blank')">ESPN</button>
+      <button onclick="window.open('https://as.com/', '_blank')">AS</button>
+      <button onclick="location.href='pagina4.html'">Sobre Mí</button>
+      <button onclick="document.getElementById('iframe-container').style.display='block'">Ver Iframe</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>¡Bienvenido a Fútbol Total!</h2>
+    <p>Explora las noticias más recientes, conoce a tus jugadores favoritos y revisa el contenido adicional en el iframe.</p>
+
+    <div id="iframe-container">
+      <iframe src="pagina6.html" width="80%" height="400"></iframe>
+    </div>
+  </main>
+
+</body>
+</html>

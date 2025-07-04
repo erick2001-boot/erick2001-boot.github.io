@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jugadores de Fútbol</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 30px;
+    }
+    .jugador {
+      display: inline-block;
+      margin: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #006400;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #004d00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jugadores Destacados</h1>
+
+  <div class="jugador">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Lionel_Messi_20180626.jpg" alt="Lionel Messi">
+    <h2>Lionel Messi</h2>
+    <button onclick="mostrarInfoMessi()">Ver Información</button>
+  </div>
+
+  <div class="jugador">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+    <h2>Cristiano Ronaldo</h2>
+    <button onclick="alert('Cristiano Ronaldo ha ganado múltiples Balones de Oro y ha jugado en el Real Madrid, Manchester United y Juventus.')">Ver Información</button>
+  </div>
+
+  <script>
+    function mostrarInfoMessi() {
+      Swal.fire({
+        title: 'Lionel Messi',
+        text: 'Messi es un futbolista argentino considerado uno de los mejores de la historia. Ha ganado múltiples Balones de Oro y jugó en el FC Barcelona y la selección Argentina.',
+        imageUrl: '',
+        imageWidth: 250,
+        imageAlt: 'Lionel Messi'
+      });
+    }
+  </script>
+
+</body>
+</html>

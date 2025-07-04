@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Mí</title>
+  <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace a tu CSS común -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    form {
+      margin-top: 30px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sobre Mí</h1>
+
+  <p>Mi nombre es <strong>Erick Rojas</strong>, soy un estudiante apasionado por la tecnología, el diseño web y el desarrollo de software. Me encanta aprender cosas nuevas y aplicar mis conocimientos en proyectos reales.</p>
+
+  <p>Además de mis estudios, disfruto de las actividades creativas, los deportes y la lectura. Siempre estoy buscando oportunidades para mejorar y colaborar con otros.</p>
+
+  <h2>Mis gustos y preferencias</h2>
+  <ol>
+    <li>Diseñar páginas web</li>
+    <li>Escuchar música electrónica y rock</li>
+    <li>Leer libros de ciencia ficción y tecnología</li>
+    <li>Jugar fútbol con amigos</li>
+    <li>Aprender nuevos lenguajes de programación</li>
+  </ol>
+
+  <h2>Formulario de contacto</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <input type="submit" value="Enviar mensaje">
+  </form>
+
+</body>
+</html>
